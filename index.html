@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>        <title>ESS - Home</title>
+
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+                <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+                <script type="text/javascript" charset="utf-8" src="cordova/cordova.js"></script>
+                <style>
+				table{
+					border: 1px solid white; border-collapse:collapse; background:#D8D8D8;
+					}
+					th{
+						text-transform:capitalize;}
+					th, td{
+						padding: 5px 5px 5px 5px;
+						border: 1px solid white;}
+						#tf{
+							background:#A5A5A5;
+							color:#F9F9F9;}
+				</style>
+                <script>
+				
+				var url = "login.html";    
+$(location).attr('href',url);
+				</script>
+        </head>
+        <body>
+                <!-- Start of first page I -->
+                <div data-role="page" id="page1">
+                        <!-- Header -->
+                        <div data-role="header">
+                          <h1>ESS - HRMIS</h1>
+                        </div>
+                        <!-- /header -->
+                        <!-- Content    -->
+                        <div data-role="content">
+                         <ul data-role="listview" data-inset="true">
+                          <li>
+                          <a href="leave.html" data-transition="slide">
+                            <h3>Leave</h3>
+                            </a></li>
+                          <li><a href="advance.html" data-transition="slide">
+                            <h3>Advances</h3>
+                            </a></li>
+                          <li><a href="claims.html" data-transition="slide">
+                            <h3>Claims</h3>
+                            </a></li>
+                          <li><a href="announcements.html" data-transition="slide">
+                            <h3>Announcements</h3>
+<!--                            <p>Lorem ipsum</p>
+                            <span class="ui-li-count">1</span>-->
+                           </a></li>
+                          <li><a href="payslip.html" data-transition="slide">
+                            <h3>Payslip</h3>
+                            </a></li>
+                          <li><a href="loans.html" data-transition="slide">
+                            <h3>Loans</h3>
+                            </a></li>
+                            <li><a href="exit.html" data-transition="slide">
+                            <h3>Exit</h3>
+                            </a></li>
+                        </ul>
+<!--<table width="100%" >
+                                <tr>
+                                <th>Payrol Details</th>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>Basic Pay</td>
+                                <td>KES 50,000.00 </td>
+                                </tr>
+                                
+                                <tr>
+                                <td>Gross Pay</td>
+                                <td>KES 50,900.00</td>
+                                </tr>
+                                
+                                <tr>
+                                <td>Taxable income</td>
+                                <td>KES 50,700.00</td>
+                                </tr>
+                                
+                                <tr>
+                                <td>PAYE</td>
+                                <td>KES 9,142.00</td>
+                                </tr>
+                                
+                                <tr>
+                                <td>NSSF</td>
+                                <td>KES 500.00</td>
+                                </tr>
+                                
+                                <tr>
+                                <td>NHIF</td>
+                                <td>KES 314.00</td>
+                                </tr>
+                                
+                                <tr id="tf">
+                                <td> NET PAY </td>
+                                <td>KES 314.00</td>
+                                </tr>
+                                </table>-->                                <!--<table>
+                                        <form action="events.php">
+                                        <tr>
+                                                <td>Username:</td>
+                                                <td><input type="text" name="username" placeholder="Username"></td>
+
+                                        </tr>
+                                        <tr>
+                                                <td>Password:</td>
+                                                <td><input type="password" name="password" placeholder="Username"></td>
+
+                                        </tr>
+                                        <tr>
+                                                <td colspan="2"><input Value="Login" type="submit"> <input Value="reset" type="reset"></td>
+                                        </tr>
+                                </form>
+                                </table>-->
+
+                        </div>
+                        <!-- /content -->
+                        <!-- footer -->
+                        <div data-role="footer">
+                                <h4>&copy; 2013 HRMIS (Software Dynamics)</h4>
+                        </div>
+                        <!-- /footer -->
+                </div>
+                <!-- /page -->
+        </body>
+</html>
+<script>
+   /*     document.addEventListener("deviceready", onDeviceReady, false);
+
+        function onDeviceReady() {
+                document.addEventListener("pause", onPause, false);
+                document.addEventListener("resume", onResume, false);
+                alert("Device is Ready");
+
+        }
+*/
+
+//What to do when paused
+function onPause(){
+        
+        alert("paused!");
+}
+
+//What to do when resumed
+function onResume()
+{
+        
+        alert("resume");
+}
+</script>
